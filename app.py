@@ -19,8 +19,7 @@ def main(stdscr):
                 if converted:
                     display_str += converted
             stdscr.clear()
-            stdscr.addstr(0, 0, "Input: " + input_str)  # 入力中の文字を表示
-            stdscr.addstr(1, 0, "Converted: " + display_str)  # 変換された文字を表示
+            stdscr.addstr(0, 0, "Combined: " + display_str + input_str)  # 結合された文字を表示
 
 if __name__ == '__main__':
     curses.wrapper(main)
