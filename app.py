@@ -3,7 +3,7 @@ import curses
 from roma2kana import romaji_to_kana_convert
 
 def main(stdscr):
-    curses.curs_set(0)  # カーソル非表示
+    # curses.curs_set(0)  # カーソル非表示
     stdscr.nodelay(True)  # 非ブロッキングモード
     input_str = ''
     display_str = ''
