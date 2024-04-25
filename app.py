@@ -7,9 +7,15 @@ def main(stdscr):
     stdscr.nodelay(True)  # 非ブロッキングモード
     input_str = ''
     display_str = ''
+
+    # 表示を初期化
+    stdscr.clear()
+    stdscr.addstr(0, 0, "Combined: " + display_str + input_str)  # 結合された文字を表示
     while True:
         key = stdscr.getch()
-        if key == ord('q'):  # 'q'で終了
+        if key == ord('q') or \
+            key == ord('c') or \
+            key == ord('v'):
             break
         elif key != -1:
             char = chr(key)
