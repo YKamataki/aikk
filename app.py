@@ -1,20 +1,15 @@
 import curses
-<<<<<<< Updated upstream
-from dotenv import load_dotenv
-=======
+
 from openai import OpenAI
->>>>>>> Stashed changes
+from dotenv import load_dotenv
 
 from roma2kana import romaji_to_kana_convert
 from henkan import henkan
 
 def main(stdscr):
     # 初期化
-<<<<<<< Updated upstream
     load_dotenv()
-=======
     client = OpenAI()
->>>>>>> Stashed changes
 
     curses.curs_set(0)  # カーソル非表示
     stdscr.nodelay(True)  # 非ブロッキングモード
