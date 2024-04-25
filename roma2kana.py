@@ -29,6 +29,8 @@ def romaji_to_kana_convert(input_string):
         'ja': 'じゃ', 'ju': 'じゅ', 'jo': 'じょ',
         'bya': 'びゃ', 'byu': 'びゅ', 'byo': 'びょ',
         'pya': 'ぴゃ', 'pyu': 'ぴゅ', 'pyo': 'ぴょ',
+
+        'tt': 'っ'
     }
     # 与えられた文字列を仮名に変換し、変換できた部分と残りの文字列を返す
     for length in range(min(len(input_string), 3), 0, -1):  # 最大3文字をチェック
