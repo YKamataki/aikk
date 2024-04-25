@@ -1,2 +1,2 @@
 # aikk
-AI based Japanese input method
+AI based Japanese Kana to Kanji converter
