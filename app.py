@@ -27,9 +27,10 @@ def main(stdscr):
             key == ord('v'):
             break
         if key == ord("\n"):  # Enterで変換
-            output_str = henkan(input_str, client)
+            output_str = henkan(display_str, client)
             stdscr.clear()
             stdscr.addstr(0, 0, "> " + display_str + input_str)  # 結合された文字を表示
+            stdscr.addstr(1, 0, "< " + output_str)  # 結合された文字を表示
         elif key != -1:
             char = chr(key)
             if char.isalpha():  # アルファベットのみ処理
