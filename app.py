@@ -10,7 +10,7 @@ def main(stdscr):
 
     # 表示を初期化
     stdscr.clear()
-    stdscr.addstr(0, 0, "Combined: " + display_str + input_str)  # 結合された文字を表示
+    stdscr.addstr(0, 0, "> " + display_str + input_str)  # 結合された文字を表示
     while True:
         key = stdscr.getch()
         if key == ord('q') or \
