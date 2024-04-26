@@ -5,7 +5,7 @@ AI based Japanese Kana to Kanji converter
 
 - Python 3.11
 - Linux / macOS (for curses)
-- OpenAI account valid API token
+- OpenAI account and valid API token
 
 ## Dependencies
 
